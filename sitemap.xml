@@ -2,35 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://kurama622.codeberg.page/categories/</loc>
+    <loc>https://kurama.com/categories/</loc>
     <lastmod>2026-06-14T10:56:09+08:00</lastmod>
   </url><url>
-    <loc>https://kurama622.codeberg.page/tags/file-manager/</loc>
+    <loc>https://kurama.com/tags/file-manager/</loc>
     <lastmod>2026-06-14T10:56:09+08:00</lastmod>
   </url><url>
-    <loc>https://kurama622.codeberg.page/posts/fsbuffer-nvim/</loc>
+    <loc>https://kurama.com/posts/fsbuffer-nvim/</loc>
     <lastmod>2026-06-14T10:56:09+08:00</lastmod>
   </url><url>
-    <loc>https://kurama622.codeberg.page/categories/neovim/</loc>
+    <loc>https://kurama.com/categories/neovim/</loc>
     <lastmod>2026-06-14T10:56:09+08:00</lastmod>
   </url><url>
-    <loc>https://kurama622.codeberg.page/posts/</loc>
+    <loc>https://kurama.com/posts/</loc>
     <lastmod>2026-06-14T10:56:09+08:00</lastmod>
   </url><url>
-    <loc>https://kurama622.codeberg.page/tags/</loc>
+    <loc>https://kurama.com/tags/</loc>
     <lastmod>2026-06-14T10:56:09+08:00</lastmod>
   </url><url>
-    <loc>https://kurama622.codeberg.page/</loc>
+    <loc>https://kurama.com/</loc>
     <lastmod>2026-06-14T10:15:19+08:00</lastmod>
   </url><url>
-    <loc>https://kurama622.codeberg.page/categories/distributed-training/</loc>
+    <loc>https://kurama.com/categories/distributed-training/</loc>
   </url><url>
-    <loc>https://kurama622.codeberg.page/tags/gdb/</loc>
+    <loc>https://kurama.com/tags/gdb/</loc>
   </url><url>
-    <loc>https://kurama622.codeberg.page/categories/linux/</loc>
+    <loc>https://kurama.com/categories/linux/</loc>
   </url><url>
-    <loc>https://kurama622.codeberg.page/categories/llm/</loc>
+    <loc>https://kurama.com/categories/llm/</loc>
   </url><url>
-    <loc>https://kurama622.codeberg.page/tags/treesitter/</loc>
+    <loc>https://kurama.com/tags/treesitter/</loc>
   </url>
 </urlset>

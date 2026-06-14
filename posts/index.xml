@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on kurama&#39;s blog</title>
-    <link>https://kurama622.codeberg.page/posts/</link>
+    <link>https://kurama.com/posts/</link>
     <description>Recent content in Posts on kurama&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 Jun 2026 10:56:09 +0800</lastBuildDate><atom:link href="https://kurama622.codeberg.page/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 14 Jun 2026 10:56:09 +0800</lastBuildDate><atom:link href="https://kurama.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>fsbuffer.nvim</title>
-      <link>https://kurama622.codeberg.page/posts/fsbuffer-nvim/</link>
+      <link>https://kurama.com/posts/fsbuffer-nvim/</link>
       <pubDate>Sun, 14 Jun 2026 10:56:09 +0800</pubDate>
       
-      <guid>https://kurama622.codeberg.page/posts/fsbuffer-nvim/</guid>
+      <guid>https://kurama.com/posts/fsbuffer-nvim/</guid>
       <description></description>
     </item>
     
