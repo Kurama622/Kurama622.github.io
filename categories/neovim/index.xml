@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>kurama&#39;s blog</title>
-    <link>https://kurama622.codeberg.page/</link>
-    <description>Recent content on kurama&#39;s blog</description>
+    <title>Neovim on kurama&#39;s blog</title>
+    <link>https://kurama622.codeberg.page/categories/neovim/</link>
+    <description>Recent content in Neovim on kurama&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 14 Jun 2026 10:15:19 +0800</lastBuildDate><atom:link href="https://kurama622.codeberg.page/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 14 Jun 2026 10:56:09 +0800</lastBuildDate><atom:link href="https://kurama622.codeberg.page/categories/neovim/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>fsbuffer.nvim</title>
       <link>https://kurama622.codeberg.page/posts/fsbuffer-nvim/</link>
