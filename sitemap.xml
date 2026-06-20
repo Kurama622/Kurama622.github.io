@@ -2,35 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://kurama622.github.io/categories/</loc>
+    <loc>https://kurama622.netlify.app/categories/</loc>
     <lastmod>2026-06-14T10:56:09+08:00</lastmod>
   </url><url>
-    <loc>https://kurama622.github.io/tags/file-manager/</loc>
+    <loc>https://kurama622.netlify.app/tags/file-manager/</loc>
     <lastmod>2026-06-14T10:56:09+08:00</lastmod>
   </url><url>
-    <loc>https://kurama622.github.io/posts/fsbuffer-nvim/</loc>
+    <loc>https://kurama622.netlify.app/posts/fsbuffer-nvim/</loc>
     <lastmod>2026-06-14T10:56:09+08:00</lastmod>
   </url><url>
-    <loc>https://kurama622.github.io/categories/neovim/</loc>
+    <loc>https://kurama622.netlify.app/categories/neovim/</loc>
     <lastmod>2026-06-14T10:56:09+08:00</lastmod>
   </url><url>
-    <loc>https://kurama622.github.io/posts/</loc>
+    <loc>https://kurama622.netlify.app/posts/</loc>
     <lastmod>2026-06-14T10:56:09+08:00</lastmod>
   </url><url>
-    <loc>https://kurama622.github.io/tags/</loc>
+    <loc>https://kurama622.netlify.app/tags/</loc>
     <lastmod>2026-06-14T10:56:09+08:00</lastmod>
   </url><url>
-    <loc>https://kurama622.github.io/</loc>
+    <loc>https://kurama622.netlify.app/</loc>
     <lastmod>2026-06-14T10:15:19+08:00</lastmod>
   </url><url>
-    <loc>https://kurama622.github.io/categories/distributed-training/</loc>
+    <loc>https://kurama622.netlify.app/categories/distributed-training/</loc>
   </url><url>
-    <loc>https://kurama622.github.io/tags/gdb/</loc>
+    <loc>https://kurama622.netlify.app/tags/gdb/</loc>
   </url><url>
-    <loc>https://kurama622.github.io/categories/linux/</loc>
+    <loc>https://kurama622.netlify.app/categories/linux/</loc>
   </url><url>
-    <loc>https://kurama622.github.io/categories/llm/</loc>
+    <loc>https://kurama622.netlify.app/categories/llm/</loc>
   </url><url>
-    <loc>https://kurama622.github.io/tags/treesitter/</loc>
+    <loc>https://kurama622.netlify.app/tags/treesitter/</loc>
   </url>
 </urlset>
