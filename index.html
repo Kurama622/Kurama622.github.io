@@ -65,7 +65,7 @@
 
   
   
-    <link rel="stylesheet" href="/css/content.min.1834235dcfa05924619c6802494bdc3cd4c7a3596377d57326678c61eab585ab.css" integrity="sha256-GDQjXc&#43;gWSRhnGgCSUvcPNTHo1ljd9VzJmeMYeq1has=" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/content.min.6d8f284e70e391ac690aeb0bf98ce4a16e0b194e10a86a728e20ea46556c123f.css" integrity="sha256-bY8oTnDjkaxpCusL&#43;YzkoW4LGU4QqGpyjiDqRlVsEj8=" crossorigin="anonymous">
   
 
   
@@ -274,77 +274,77 @@
 
 
 
-<div class="carousel" id="carousel-1781955311399920021">
+<div class="carousel" id="carousel-1781966270631342901">
   <div class="carousel-track">
     
       
 
       <div class="carousel-slide">
         
-        <img src="/images/llm-01.png" alt="">
+        <img src="/images/llm-01.png" alt=""  loading="lazy" decoding="async">
       </div>
     
       
 
       <div class="carousel-slide">
         
-        <img src="/images/llm-02.png" alt="">
+        <img src="/images/llm-02.png" alt=""  loading="lazy" decoding="async">
       </div>
     
       
 
       <div class="carousel-slide">
         
-        <img src="/images/profile-01.png" alt="">
+        <img src="/images/profile-01.png" alt=""  loading="lazy" decoding="async">
       </div>
     
       
 
       <div class="carousel-slide">
         
-        <img src="/images/profile-02.png" alt="">
+        <img src="/images/profile-02.png" alt=""  loading="lazy" decoding="async">
       </div>
     
       
 
       <div class="carousel-slide">
         
-        <img src="/images/clean-diagnostic-01.png" alt="">
+        <img src="/images/clean-diagnostic-01.png" alt=""  loading="lazy" decoding="async">
       </div>
     
       
 
       <div class="carousel-slide">
         
-        <img src="/images/fsbuffer-01.png" alt="">
+        <img src="/images/fsbuffer-01.png" alt=""  loading="lazy" decoding="async">
       </div>
     
       
 
       <div class="carousel-slide">
         
-        <img src="/images/fsbuffer-02.png" alt="">
+        <img src="/images/fsbuffer-02.png" alt=""  loading="lazy" decoding="async">
       </div>
     
       
 
       <div class="carousel-slide">
         
-        <img src="/images/context-01.png" alt="">
+        <img src="/images/context-01.png" alt=""  loading="lazy" decoding="async">
       </div>
     
       
 
       <div class="carousel-slide">
         
-        <img src="/images/dashboard-01.png" alt="">
+        <img src="/images/dashboard-01.png" alt=""  loading="lazy" decoding="async">
       </div>
     
       
 
       <div class="carousel-slide">
         
-        <img src="/images/dashboard-02.png" alt="">
+        <img src="/images/dashboard-02.png" alt=""  loading="lazy" decoding="async">
       </div>
     
   </div>
@@ -379,14 +379,22 @@
 
 <script>
 (() => {
-  const carousel = document.getElementById("carousel-1781955311399920021");
+  const carousel = document.getElementById("carousel-1781966270631342901");
+  if (!carousel) return;
+
   const track = carousel.querySelector(".carousel-track");
+  const nextBtn = carousel.querySelector(".next");
+  const prevBtn = carousel.querySelector(".prev");
+  const dots = carousel.querySelectorAll(".carousel-dot");
 
   const slides = [...track.children];
   const count = slides.length;
 
   if (count <= 1) return;
 
+  
+  
+  
   const firstClone = slides[0].cloneNode(true);
   const lastClone = slides[count - 1].cloneNode(true);
 
@@ -394,12 +402,15 @@
   track.insertBefore(lastClone, slides[0]);
 
   let current = 1;
-  let timer;
+  let timer = null;
+  let animating = false;
 
-  const allSlides = track.children;
-  const dots = carousel.querySelectorAll(".carousel-dot");
-
+  
+  
+  
   function updateDots() {
+    if (!dots.length) return;
+
     dots.forEach(dot => dot.classList.remove("active"));
 
     let realIndex = current - 1;
@@ -410,63 +421,114 @@
     if (realIndex >= count)
       realIndex = 0;
 
-    dots[realIndex].classList.add("active");
+    dots[realIndex]?.classList.add("active");
   }
 
+  
+  
+  
   function move(animate = true) {
+    animating = animate;
+
     track.style.transition =
       animate ? "transform .5s ease" : "none";
 
     track.style.transform =
-      `translateX(-${current * 100}%)`;
+      `translate3d(-${current * 100}%, 0, 0)`;
 
     updateDots();
   }
 
+  
   move(false);
 
+  
+  
+  
   function next() {
+    if (animating) return;
+
     current++;
-    move();
+    move(true);
   }
 
+  
+  
+  
   function prev() {
+    if (animating) return;
+
     current--;
-    move();
+    move(true);
   }
 
-  carousel.querySelector(".next")
-    .addEventListener("click", next);
+  
+  
+  
+  track.addEventListener("transitionend", e => {
+    if (e.propertyName !== "transform")
+      return;
 
-  carousel.querySelector(".prev")
-    .addEventListener("click", prev);
+    animating = false;
 
-  track.addEventListener("transitionend", () => {
-
-    if (current === count + 1) {
+    
+    if (current >= count + 1) {
       current = 1;
-      move(false);
+
+      track.style.transition = "none";
+      track.style.transform =
+        `translate3d(-${current * 100}%, 0, 0)`;
+
+      updateDots();
     }
 
-    if (current === 0) {
+    
+    if (current <= 0) {
       current = count;
-      move(false);
+
+      track.style.transition = "none";
+      track.style.transform =
+        `translate3d(-${current * 100}%, 0, 0)`;
+
+      updateDots();
     }
   });
 
+  
+  
+  
+  nextBtn?.addEventListener("click", next);
+  prevBtn?.addEventListener("click", prev);
+
+  
+  
+  
   dots.forEach((dot, idx) => {
     dot.addEventListener("click", () => {
+      if (animating) return;
+
       current = idx + 1;
-      move();
+      move(true);
     });
   });
 
-  function startAutoPlay() {
-    timer = setInterval(next, 3000);
+  
+  
+  
+  function stopAutoPlay() {
+    if (timer) {
+      clearInterval(timer);
+      timer = null;
+    }
   }
 
-  function stopAutoPlay() {
-    clearInterval(timer);
+  function startAutoPlay() {
+    stopAutoPlay();
+
+    timer = setInterval(() => {
+      if (!animating)
+        next();
+    }, 3000);
   }
 
   carousel.addEventListener(
@@ -477,6 +539,19 @@
   carousel.addEventListener(
     "mouseleave",
     startAutoPlay
+  );
+
+  
+  
+  
+  document.addEventListener(
+    "visibilitychange",
+    () => {
+      if (document.hidden)
+        stopAutoPlay();
+      else
+        startAutoPlay();
+    }
   );
 
   startAutoPlay();
